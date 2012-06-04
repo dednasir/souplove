@@ -1,0 +1,16 @@
+# Test data
+
+SoupUser(bob):
+    email:          bob@gmail.com
+    password:       secret
+    fullname:       Bob
+    isAdmin:        true
+    
+SoupUser(jeff):
+    email:          jeff@gmail.com
+    password:       secret
+    fullname:       Jeff    
+    isAdmin:		false
+    
+
+                 
