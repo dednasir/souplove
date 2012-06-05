@@ -16,6 +16,10 @@
     <booleanAttribute key="org.eclipse.jdt.launching.DEFAULT_CLASSPATH" value="false"/>
     <stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="play.server.Server"/>
     <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="souplove"/>
+<<<<<<< HEAD
     <stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value="-Xdebug -Xrunjdwp:transport=dt_socket,address=0,server=y,suspend=n -Dplay.debug=yes -Dplay.id=test -Dapplication.path=&quot;${project_loc:souplove}&quot; -Djava.endorsed.dirs=&quot;C:\play-1.2.4/framework/endorsed&quot; -javaagent:&quot;C:\play-1.2.4/framework/play-1.2.4.jar&quot;"/>
+=======
+    <stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value="-Xdebug -Xrunjdwp:transport=dt_socket,address=8000,server=y,suspend=n -Dplay.debug=yes -Dplay.id=test -Dapplication.path=&quot;${project_loc:souplove}&quot; -Djava.endorsed.dirs=&quot;C:\play-1.2.4/framework/endorsed&quot; -javaagent:&quot;C:\play-1.2.4/framework/play-1.2.4.jar&quot;"/>
+>>>>>>> 940948ffd861546e7a0f7407eecadb091be2972a
 </launchConfiguration>
 

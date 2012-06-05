@@ -1,6 +1,7 @@
 # you describe your data using the YAML notation here
 # and then load them using Fixtures.load("data.yml")
 
+<<<<<<< HEAD
 
 SoupUser(bob):
     email:          bob@gmail.com
@@ -15,3 +16,9 @@ SoupUser(jeff):
     
 
                  
+=======
+# User(bob):
+#   email: bob@gmail.com
+#   password: secret
+#   fullname: Bob
+>>>>>>> 940948ffd861546e7a0f7407eecadb091be2972a

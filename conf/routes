@@ -3,7 +3,22 @@
 # ~~~~
 
 # Home page
+<<<<<<< HEAD
 GET     /                                       Application.index
+=======
+GET     /                               Application.index
+GET     /login                          Application.saveUser
+POST    /login                          Application.login
+GET     /                               Application.logout
+
+
+
+
+
+
+
+
+>>>>>>> 940948ffd861546e7a0f7407eecadb091be2972a
 
 # Ignore favicon requests
 GET     /favicon.ico                            404
