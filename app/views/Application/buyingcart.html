@@ -1,0 +1,36 @@
+#{extends 'main.html' /}
+#{set title:'Buying Cart' /}
+
+<div id="subcontent">
+<h2 class="pagetitle">Buying Cart</h2>
+<table id="Buying-cart">
+	<tbody>
+	<tr>
+	<th style="width:150px; text-align:left;">Products</th>
+	<th>Price</th>
+	<th style="width:150px;">Quantity</th>
+	<th></th>
+	<th style="text-align:right;">Total</th>
+	</tr>
+	<tr class="even">
+		<td><img src="@{'/public/images/content/pic6.jpg'}" alt="" /><br />Soup 1</td>
+		<td><span class="unit-price">€ 0,00</span></td>
+		<td><input type="text"  size="3" value="1"/></td>
+		<td style="text-align:left;"><a href="#">Remove</a></td>
+		<td style="text-align:right;"><span class="subtotal-price">€ 0,00</span></td>
+	</tr>
+	</tbody>
+</table>
+<ul class="total">
+	<li>Sub Total</li>
+	<li>€ 0,00</li>
+</ul>
+<div id="con-butcart">
+	<span class="alignright"><a href="#" class="more but-green">Update Buying Cart</a></span>
+	<a href="#" class="more but-red">Continue Buying</a>
+	<div class="clear"></div>
+</div>	
+	
+   
+   	<div class="clear"></div><!-- clear float -->
+			</div><!-- end #maincontent--> 

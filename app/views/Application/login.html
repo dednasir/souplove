@@ -1,0 +1,92 @@
+#{extends 'main.html' /}
+#{set title:'login' /}
+
+
+<div id="maincontent">
+	<h2 class="pagetitle">Log In</h2>
+
+	<div id="login-process">
+	<span class="first">&nbsp;</span>
+	<span>Summary</span>
+	<span class="active">Login</span>
+	<span> Address</span>
+	<span> Shipping</span>
+	 <span class="last"> Payment</span>
+	 <div class="clear"></div>
+	</div>
+	<br /><br /><br />
+	
+	<h2 class="title">Create your account</h2>
+	
+	<p>Enter your email address to create an account.</p>
+	
+	#{form @Application.saveUser()}
+    #{field 'user.username'}
+        <p class="${field.errorClass}">
+            <strong>Username:</strong> 
+            <input type="text" name="${field.name}" size="16" value="${user?.username}"> *
+            <span class="error">${field.error}</span>
+        </p>
+	 #{/field}
+    #{field 'user.name'}
+        <p class="${field.errorClass}">
+            <strong>Real name:</strong> 
+            <input type="text" name="${field.name}" size="16" value="${user?.name}"> *
+            <span class="error">${field.error}</span>
+        </p>
+    #{/field}
+    #{field 'user.password'}
+        <p class="${field.errorClass}">
+            <strong>Password:</strong>
+             <input type="password" name="${field.name}" size="16" value="${user?.password}"> *
+            <span class="error">${field.error}</span>
+        </p>
+    #{/field}
+    #{field 'verifyPassword'}
+        <p class="${field.errorClass}">
+            <strong>Verify password:</strong>
+			<input type="password" name="${field.name}" size="16" value="${verifyPassword}"> *
+            <span class="error">${field.error}</span>
+        </p>
+    #{/field}    
+    <p class="buttons">
+        <input type="submit" value="Create New User"> <a href="@{index()}">Cancel</a>    
+    </p>
+    
+#{/form}
+
+
+		
+		
+	<br />
+	<br />
+
+	<h2 class="title">Already Registered?</h2>
+	
+	<div id="login">
+    
+    (try with demo/demo)
+
+    #{form @login(), id:'formLogin' }
+        <p class="field">
+            <label>Login Name:</label>
+            <input type="text" name="username" size="19" value="${flash.username}" />
+        </p>
+        <p class="field">
+            <label>Password:</label>
+            <input type="password" name="password" size="19"/>
+        </p>    
+        <p class="buttons">
+            <input type="submit" value="Account login" />
+        </p> 
+    #{/form}
+
+    
+</div>
+
+
+	<div class="clear"></div><!-- clear float -->
+</div><!-- end #maincontent-->
+           
+	   
+          
